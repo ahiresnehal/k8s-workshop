@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- # annotations:
- #   flux.weave.works/automated: "true"
+  annotations:
+    flux.weave.works/automated: "true"
   name: webapp
-#  namespace: k8s-workshop
+  namespace: k8s-workshop
 spec:
   selector:
     matchLabels:
@@ -46,8 +46,8 @@ spec:
               value: 'redis-primary'
             - name: REDIS_PORT
               value: '6379'
-            # - name: CHAOS
-            #   value: true
+            - name: CHAOS
+               value: true
             - name: SECRET1
               valueFrom:
                 secretKeyRef:
