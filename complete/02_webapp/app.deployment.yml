@@ -74,10 +74,10 @@ spec:
         - name: web-app-storage
           persistentVolumeClaim:
             claimName: webapp-my-pvc
-#        - name: secrets
-#          secret:
-#            secretName: webapp
-#            items:
-#            - key: val2
-#              path: secret_file
-#              mode: 511
+        - name: secrets
+          secret:
+            secretName: webapp
+            items:
+            - key: val2
+              path: secret_file
+              mode: 511
