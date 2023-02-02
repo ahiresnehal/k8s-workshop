@@ -4,11 +4,11 @@ metadata:
   name: webapp-my-pvc 
   namespace: k8s-workshop
 spec:
-#  storageClassName: ""
+  storageClassName: ""
   volumeMode: Filesystem
   volumeName: webapp-my-pv
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 27Gi
+      storage: 20Gi
