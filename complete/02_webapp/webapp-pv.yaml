@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata: 
+  namespace: k8s-workshop
   name: webapp-my-pv
 spec:
   accessModes:
