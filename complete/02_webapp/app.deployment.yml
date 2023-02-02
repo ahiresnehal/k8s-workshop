@@ -78,3 +78,6 @@ spec:
             - key: val2
               path: secret_file
               mode: 511
+        - name: web-app-pvc
+          persistentVolumeClaim:
+            claimName: webapp-my-pvc
