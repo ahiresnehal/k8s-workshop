@@ -71,13 +71,13 @@ spec:
               cpu: 200m
               memory: 300Mi
       volumes:
-        - name: secrets
-          secret:
-            secretName: webapp
-            items:
-            - key: val2
-              path: secret_file
-              mode: 511
-        - name: web-app-pvc
+        - name: web-app-storage
           persistentVolumeClaim:
             claimName: webapp-my-pvc
+#        - name: secrets
+#          secret:
+#            secretName: webapp
+#            items:
+#            - key: val2
+#              path: secret_file
+#              mode: 511
