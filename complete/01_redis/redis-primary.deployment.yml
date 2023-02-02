@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: k8s-workshop
   
--------------------
+---
 
 apiVersion: apps/v1
 kind: Deployment
