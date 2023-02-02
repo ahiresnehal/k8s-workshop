@@ -46,8 +46,8 @@ spec:
               value: 'redis-primary'
             - name: REDIS_PORT
               value: '6379'
-            - name: CHAOS
-               value: true
+           #   - name: CHAOS
+           #     value: true
             - name: SECRET1
               valueFrom:
                 secretKeyRef:
