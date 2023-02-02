@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: my-pvc 
+  name: webapp-my-pvc 
   namespace: k8s-workshop
 spec:
 #  storageClassName: ""
